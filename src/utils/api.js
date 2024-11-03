@@ -24,7 +24,7 @@ export const fetchDataWithEndPoint = async (api_endpoint) => {
     method: "GET",
   };
   const res = await fetch(
-    `${base_url}${api_endpoint}`,
+    `${base_url}${api_endpoint}/`,
     options
   );
   const data = await res.json();
@@ -43,7 +43,7 @@ export const fetchDataFromApiWithResponse = async (
     body: JSON.stringify(bodyData),
   };
   const res = await fetch(
-    `${base_url}${api_endpoint}`,
+    `${base_url}${api_endpoint}/`,
     options
   );
   const data = await res.json();
